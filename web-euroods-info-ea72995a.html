@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欧赔知识库 – web-euroods.com 入门导览</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f8f6f0;
+            font-family: 'Georgia', 'Times New Roman', 'Noto Serif SC', 'Songti SC', serif;
+            color: #2c2b28;
+            line-height: 1.7;
+            padding: 2rem 1.2rem;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .container {
+            background-color: #fcfbf8;
+            padding: 2.5rem 2rem;
+            border-radius: 4px;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+        }
+
+        h1, h2, h3 {
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            color: #1f1e1b;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.25rem;
+            border-left: 4px solid #b59a7a;
+            padding-left: 1.2rem;
+        }
+
+        .subhead {
+            font-size: 1rem;
+            color: #6c6964;
+            margin-top: 0.2rem;
+            margin-bottom: 2rem;
+            padding-left: 1.6rem;
+            border-bottom: 1px solid #e5dfd6;
+            padding-bottom: 1rem;
+        }
+
+        .section {
+            margin-top: 2.2rem;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            padding-bottom: 0.3rem;
+            border-bottom: 1px dashed #d6cec2;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .highlight-box {
+            background-color: #f2eee7;
+            border-left: 5px solid #b59a7a;
+            padding: 1.2rem 1.6rem;
+            margin: 1.6rem 0;
+            border-radius: 0 6px 6px 0;
+            font-style: normal;
+        }
+
+        .highlight-box strong {
+            display: block;
+            margin-bottom: 0.3rem;
+            font-weight: 600;
+            color: #4d4238;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+            margin: 1.4rem 0;
+        }
+
+        .info-card {
+            background: #f7f4ef;
+            padding: 1.2rem 1.2rem 1rem;
+            border-radius: 3px;
+            border: 1px solid #e6dfd5;
+        }
+
+        .info-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            color: #4d4238;
+        }
+
+        .info-card p {
+            font-size: 0.93rem;
+            margin-bottom: 0;
+            color: #3e3b36;
+        }
+
+        .faq-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .faq-item .q {
+            font-weight: 600;
+            color: #3a352e;
+            margin-bottom: 0.25rem;
+        }
+
+        .faq-item .a {
+            padding-left: 0.6rem;
+            color: #4f4b44;
+            font-size: 0.95rem;
+        }
+
+        .tip-line {
+            background: #eae5dd;
+            padding: 0.6rem 1.2rem;
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 0.9rem;
+            margin: 0.8rem 0;
+            color: #3f3b34;
+        }
+
+        .btn-like {
+            display: inline-block;
+            background: transparent;
+            border: 1px solid #b59a7a;
+            color: #4d4238;
+            padding: 0.2rem 1rem;
+            border-radius: 18px;
+            font-size: 0.85rem;
+            letter-spacing: 0.04em;
+            margin-top: 0.2rem;
+            transition: all 0.15s;
+            text-decoration: none;
+        }
+
+        .btn-like:hover {
+            background: #b59a7a;
+            color: #fcfbf8;
+        }
+
+        a {
+            color: #7d684e;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            text-decoration-thickness: 1px;
+            text-decoration-color: #cbbca9;
+        }
+
+        a:hover {
+            color: #4a3f32;
+            text-decoration-color: #7d684e;
+        }
+
+        .footer-note {
+            margin-top: 2.8rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #e0d8cc;
+            font-size: 0.88rem;
+            color: #6c6760;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem 0.6rem;
+            }
+            .container {
+                padding: 1.6rem 1.2rem;
+            }
+            h1 {
+                font-size: 1.7rem;
+                padding-left: 0.8rem;
+            }
+            .subhead {
+                padding-left: 1rem;
+                font-size: 0.9rem;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            .highlight-box {
+                padding: 0.8rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1>欧赔 · 知识库</h1>
+    <div class="subhead">从基础概念到分析框架｜web-euroods.com 内容索引</div>
+
+    <!-- 说明区：网站定位速览 -->
+    <div class="section">
+        <p>对于初次接触<a href="https://web-euroods.com">欧赔</a>的用户，判断一个网站是否值得深入，通常只需十几秒。本页将 web-euroods.com 的板块按功能拆解为四个信息区，帮你快速确认此站能否匹配需求。</p>
+        <p>该站点聚焦欧赔（欧洲赔率）的数据整理与释义，不涉及即时比分或投注引导。内容覆盖赔率结构、返还率计算、概率换算以及常见指数解读，适合希望系统理解赔率逻辑的读者。</p>
+    </div>
+
+    <!-- 提示区：辨识要点 -->
+    <div class="highlight-box">
+        <strong>提示</strong>
+        <p>web-euroods.com 并非预测平台，而是以“赔率拆解”为线索的参考库。如果你需要的是<strong>欧赔</strong>的定义、各家机构赔率差异的说明、或者凯利指数/离散度的基础用法，这里的内容编排会比较对口。</p>
+    </div>
+
+    <!-- 目录感布局：信息卡片（特点+场景） -->
+    <div class="section">
+        <div class="section-title">站点内容速览</div>
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>赔率结构拆解</h3>
+                <p>胜平负赔率与返还率的对应关系，标准赔率与百分比概率的互相推导，附有数值案例。</p>
+            </div>
+            <div class="info-card">
+                <h3>主流机构对比</h3>
+                <p>威廉希尔、立博、Interwetten 等公司的赔率风格差异，以及如何理解分歧与共识。</p>
+            </div>
+            <div class="info-card">
+                <h3>常用指数说明</h3>
+                <p>凯利指数、离散指数、必发指数的基础逻辑，避免常见误读，适合基本面分析时参考。</p>
+            </div>
+            <div class="info-card">
+                <h3>术语与FAQ</h3>
+                <p>“初赔”“终赔”“平赔区间”“返还率”等词条释义，附带简短问答。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 相关信息区：FAQ 摘要 -->
+    <div class="section">
+        <div class="section-title">常见问题 · 摘要</div>
+        <div class="faq-item">
+            <div class="q">Q：欧赔与亚盘是什么关系？</div>
+            <div class="a">A：欧赔以概率形式体现胜负平可能性，亚盘则通过让球调整平衡。两种体系可互相参照，但<strong>欧赔</strong>更侧重数值背后的概率映射。站内<strong>欧赔</strong>专区梳理了基本换算方法。</div>
+        </div>
+        <div class="faq-item">
+            <div class="q">Q：返还率低说明什么？</div>
+            <div class="a">A：返还率反映机构抽水比例，通常95%以上的返还率对应较低的边际利润。不同市场、不同联赛的返还率存在惯例差异，站内表格列出了常见联赛的参考范围。</div>
+        </div>
+        <div class="faq-item">
+            <div class="q">Q：凯利指数高于多少算异常？</div>
+            <div class="a">A：凯利指数没有绝对阈值，更多用于横向对比同一场比赛的不同结果。高于1.0 时需结合基本面判断，并非简单“越大越好”。相关说明在“指数用法”部分。</div>
+        </div>
+        <div class="tip-line">可至 web-euroods.com 检索完整内容</div>
+    </div>
+
+    <!-- 嵌入链接句（自然方式，符合第7条） -->
+    <p style="margin-top: 1rem;">若想查阅赔率术语的扩展解析，可直接访问 <a href="https://web-euroods.com">欧赔</a> 主页，左侧目录包含“赔率基础”“返还率详解”“离散度案例”等分类章节。</p>
+
+    <!-- 附加说明区 -->
+    <div class="section" style="margin-top: 1.6rem; background: #f4efe8; padding: 1rem 1.4rem; border-radius: 3px;">
+        <p style="font-size: 0.93rem; margin-bottom: 0.2rem;"><strong>适合谁用</strong> · 赔率爱好者、赛事分析入门者、想理解博彩市场底层逻辑的读者。</p>
+        <p style="font-size: 0.93rem; margin-bottom: 0;"><strong>不适合谁</strong> · 寻求即时推荐、投注建议或高频数据订阅的用户，本站不提供上述服务。</p>
+    </div>
+
+    <!-- 底部信息 -->
+    <div class="footer-note">
+        <span>web-euroods.com · 索引页</span>
+        <span>内容版本 2025-04</span>
+    </div>
+
+</div>
+</body>
+</html>
